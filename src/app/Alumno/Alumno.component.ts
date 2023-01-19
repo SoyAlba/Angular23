@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./Alumno.component.css']
 })
 export class AlumnoComponent implements OnInit {
+  columnas:number=2;
   nombre: string='Perico';
   apellido:string='De Los Palotes';
   direccion:string='Calle Maria Auxiliadora, 50, Zaragoza';

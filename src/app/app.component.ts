@@ -4,13 +4,16 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
             <div>
-              <img src='{{imagen}}' width="150px">
-              <h1>{{encabezado}}</h1>
-              <app-Alumno></app-Alumno>
+              <button class={{aplicarClases}}>boton 1</button>
+              <button [class]='aplicarClases'>boton 1</button>
+              <br>
+              <br>
+              <button class='color italica negrita' [class.negrita]='false'>boton 2</button>
             </div>` ,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  aplicarClases:string="italica negrita"
   title = 'Angular23';
   encabezado='Datos Alumno';
   nombre= 'Preico';
