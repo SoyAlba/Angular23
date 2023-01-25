@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   template: `
             <div>
               <app-Alumno></app-Alumno>
+              <app-AlumnoLista></app-AlumnoLista>
             </div>` ,
   styleUrls: ['./app.component.css']
 })
