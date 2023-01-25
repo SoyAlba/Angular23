@@ -12,6 +12,9 @@ import { Component } from '@angular/core';
               <br>
               <br>
               <button [ngClass]='addClases()'>boton 3</button>
+              <br>
+              <button (click)="onclick()")>boton 4</button>
+              <img src='./assets/perro.gif' *ngIf='visible'/>
             </div>` ,
   styleUrls: ['./app.component.css']
 })
@@ -35,4 +38,10 @@ export class AppComponent {
   getNombreCompleto():string{
     return this.nombre +' '+ this.apellido;
   }
+  visible:boolean=true;
+
+  onclick(): void{
+    this.visible=!this.visible
+  }
+
 }
