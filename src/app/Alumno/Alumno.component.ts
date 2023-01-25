@@ -11,6 +11,11 @@ export class AlumnoComponent implements OnInit {
   apellido:string='De Los Palotes';
   direccion:string='Calle Maria Auxiliadora, 50, Zaragoza';
   edad:number=23;
+  visible:boolean=false;
+
+  alternarVisibles(){
+    this.visible=!this.visible;
+  }
   constructor() { }
 
   ngOnInit() {

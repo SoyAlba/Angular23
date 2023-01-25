@@ -20,17 +20,20 @@
         {{apellido}}
       </td>
     </tr>
-    <tr>
+    <tr *ngIf="visible">
       <td>Direccion</td>
       <td>
         {{direccion}}
       </td>
     </tr>
-    <tr>
+    <tr *ngIf="visible">
       <td>Edad</td>
       <td>
         {{edad}}
       </td>
     </tr>
   </table>
+  <br>
+
+  <button (click)="alternarVisibles()">{{visible?'Ocultar':'Mostrar'}}Deatalles</button>
 
