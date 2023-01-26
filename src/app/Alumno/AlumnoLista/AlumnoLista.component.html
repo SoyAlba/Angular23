@@ -11,8 +11,15 @@
     </tr>
 </thead>
 <tbody>
-  <tr>
-    <td></td>
+  <tr *ngFor='let alumno of alumnos'>
+    <td>{{alumno.nombre|uppercase|alumnoTitulo:alumno.sexo}}</td>
+    <td>{{alumno.apellidos|uppercase}}</td>
+    <td>{{alumno.direcion}}</td>
+    <td>{{alumno.fnac|date:'dd/MM/y'}}</td>
+    <td>{{alumno.sexo}}</td>
+  </tr>
+  <tr *ngIf="alumnos.length == 0">
+    <td colspan="4">No hay alumnos</td>
   </tr>
 </tbody>
 </table>

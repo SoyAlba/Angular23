@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlumnoComponent } from './Alumno/Alumno.component';
 import { AlumnoListaComponent } from './Alumno/AlumnoLista/AlumnoLista.component';
+import { AlumnoTituloPipe } from './Alumno/AlumnoLista/alumnoTitulo.pipe';
 @NgModule({
   declarations: [
     AppComponent,
       AlumnoComponent,
-      AlumnoListaComponent
+      AlumnoListaComponent,
+      AlumnoTituloPipe
    ],
   imports: [
     BrowserModule,

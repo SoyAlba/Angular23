@@ -12,6 +12,9 @@ export class AlumnoComponent implements OnInit {
   direccion:string='Calle Maria Auxiliadora, 50, Zaragoza';
   edad:number=23;
   visible:boolean=false;
+  alumnos:Array<AlumnoComponent>=[
+
+  ]
 
   alternarVisibles(){
     this.visible=!this.visible;
