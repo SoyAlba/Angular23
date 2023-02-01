@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
             <div>
-              <app-Alumno></app-Alumno>
               <app-AlumnoLista></app-AlumnoLista>
             </div>` ,
   styleUrls: ['./app.component.css']
