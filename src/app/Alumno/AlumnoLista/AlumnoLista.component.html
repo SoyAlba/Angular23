@@ -1,4 +1,4 @@
-<app-alumnoCount [todos]="getTodos()" [hombres]="getHombres()">[hombres]="getMujeres ()"</app-alumnoCount>
+<app-alumnoCount [todos]="getTodos()" [hombres]="getHombres()"[hombres]="getMujeres ()" (globalElegido)="cabiarSelecion($event)"></app-alumnoCount>
 <table>
   <thead>
     <tr>
@@ -12,9 +12,9 @@
   <tbody>
     <ng-container *ngFor='let alumno of alumnos'>
         <tr *ngIf='selecion=="Todos"||alumno.sexo==selecion'>
-          <td>{{alumno.nombre|uppercase|alumnoTitulo:alumno.sexo||alumno.nombre}}</td>
+          <td>{{alumno.nombre|uppercase|alumnoTitulo:alumno.sexo}}{{alumno.nombre|uppercase}}</td>
           <td>{{alumno.apellidos|uppercase}}</td>
-          <td>{{alumno.direcion}}</td>
+          <td>{{alumno.direrccion}}</td>
           <td>{{alumno.fnac|date:'dd/MM/y'}}</td>
           <td>{{alumno.sexo}}</td>
         </tr>

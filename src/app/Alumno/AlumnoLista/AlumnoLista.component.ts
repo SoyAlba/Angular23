@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./AlumnoLista.component.css']
 })
 export class AlumnoListaComponent implements OnInit {
-  selecion:string =;
+  selecion:string ='Todos';
 alumnos: any[]=[
   {nombre:'perico',apellidos:'delgado',direrccion:'segobia city',fnac:'12/2/2000',sexo:'hombre'},
   {nombre:'antonio',apellidos:'perez',direrccion:'murcia city',fnac:'2/7/2007',sexo:'hombre'},
