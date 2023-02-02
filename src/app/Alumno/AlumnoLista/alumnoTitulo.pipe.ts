@@ -7,7 +7,7 @@ import { retry } from 'rxjs';
 export class AlumnoTituloPipe implements PipeTransform {
 
   transform(value: any, sexo: string): string {
-    if(sexo=='Hombre')
+    if(sexo=='hombre')
       return 'Sr.'
     else
       return 'Sra.';

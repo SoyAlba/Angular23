@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-AlumnoLista',
@@ -16,13 +16,13 @@ alumnos: any[]=[
 
   ngOnInit() {
   }
-getTodos():number{
-  return this.alumnos.length;
-}
-getHombres():number{
-  return this.alumnos.filter(a=> a.sexo=="hombre").length
-}
-getMujeres():number{
-  return this.alumnos.filter(a=> a.sexo=="mujer").length
-}
+  getTodos():number{
+    return this.alumnos.length;
+  }
+  getHombres():number{
+    return this.alumnos.filter(a=> a.sexo=="hombre").length
+  }
+  getMujeres():number{
+    return this.alumnos.filter(a=> a.sexo=="mujer").length
+  }
 }

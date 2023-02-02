@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AlumnoComponent } from './Alumno/Alumno.component';
 import { AlumnoListaComponent } from './Alumno/AlumnoLista/AlumnoLista.component';
 import { AlumnoTituloPipe } from './Alumno/AlumnoLista/alumnoTitulo.pipe';
+import { AlumnoCountComponent } from './Alumno/alumnoCount/alumnoCount.component';
 @NgModule({
   declarations: [
     AppComponent,
       AlumnoComponent,
       AlumnoListaComponent,
-      AlumnoTituloPipe
+      AlumnoTituloPipe,
+      AlumnoCountComponent
    ],
   imports: [
     BrowserModule,
