@@ -6,14 +6,18 @@ import { Component, OnInit, Input,Output,EventEmitter } from '@angular/core';
   styleUrls: ['./alumnoCount.component.css']
 })
 export class AlumnoCountComponent  {
-
+  opcionElegida: string='Todos';
+  @Output()
+  globalElegido: EventEmitter<string>=new EventEmitter();
   @Input()
   todos:number=0;
   @Input()
   hombres:number=0;
   @Input()
   mujeres:number=0;
-
+  alCambiar(){
+    this.globalElegido.emit(this.opcionElegida);
+  }
   constructor() { }
 
 }
