@@ -13,8 +13,8 @@
     <ng-container *ngFor='let alumno of alumnos'>
         <tr *ngIf='selecion=="Todos"||alumno.sexo==selecion'>
           <td>{{alumno.nombre|uppercase|alumnoTitulo:alumno.sexo}}{{alumno.nombre|uppercase}}</td>
-          <td>{{alumno.apellidos|uppercase}}</td>
-          <td>{{alumno.direrccion}}</td>
+          <td>{{alumno.apellido|uppercase}}</td>
+          <td>{{alumno.direccion}}</td>
           <td>{{alumno.fnac|date:'dd/MM/y'}}</td>
           <td>{{alumno.sexo}}</td>
         </tr>
